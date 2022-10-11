@@ -8,7 +8,7 @@ async function getWeather(){
    const weaApi_URL = api + input.value + apiKey + units
    const response = await fetch(weaApi_URL)
    const data = await response.json()
-  
+   document.getElementById('cityName').textContent = input.value
    document.getElementById('weather').textContent = data.main.temp
 }
 
