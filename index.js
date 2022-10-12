@@ -11,11 +11,11 @@ async function getWeather(){
    document.getElementById('weather').textContent = 'The temperature in '+ input.value + ' is: '  + data.main.temp + ' degrees fahrenheit'
 }
 
-var inputText = document.getElementById("city");
-inputText.addEventListener("keyup", function(event) {
-   if (event.key === 'Enter') {
-      event.preventDefault();
-      document.getElementById("submit").click();
-   }
-});
+// var inputText = document.getElementById("city");
+// inputText.addEventListener("keyup", function(event) {
+//    if (event.key === 'Enter') {
+//       event.preventDefault();
+//       document.getElementById("submit").click();
+//    }
+// });
 getWeather();
