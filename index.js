@@ -8,9 +8,14 @@ async function getWeather(){
    const weaApi_URL = api + input.value + apiKey + units
    const response = await fetch(weaApi_URL)
    const data = await response.json()
-   document.getElementById('cityName').textContent = input.value
-   document.getElementById('weather').textContent = data.main.temp
+   document.getElementById('weather').textContent = 'The temperature in '+ input.value + ' is: '  + data.main.temp + ' degrees fahrenheit'
 }
 
+var inputText = document.getElementById("city");
+inputText.addEventListener("keyup", function(event) {
+   if (event.key === 'Enter') {
+      event.preventDefault();
+      document.getElementById("submit").click();
+   }
+});
 getWeather();
-
