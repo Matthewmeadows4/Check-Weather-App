@@ -1,6 +1,7 @@
 
     body{
         background-color: aqua;
+        width: 100%;
     }
 
     h1{
@@ -15,10 +16,37 @@
 
     button{
         font-family: 'Silkscreen', cursive;
+        text-decoration: none;
         
     }
     input {
         border-style: solid;
         border-radius: 10px;
         background-color: lightblue;
+      }
+    
+      #explain{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Silkscreen', cursive;
+      }
+
+      #weatherInfo{
+        width: auto;
+        margin: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      @media  only screen and (max-width: 600px) {
+        #weatherInfo{
+            margin: auto;
+        }
+
+        h2{
+            padding: 10px;
+            font-size: smaller;
+        }
       }
