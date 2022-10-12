@@ -13,7 +13,7 @@ async function getWeather(){
 getWeather();
 
 
-var inputText = document.getElementById("city");
+let inputText = document.getElementById("city");
 inputText.addEventListener("keyup", function(event) {
    if (event.key === 'Enter') {
       event.preventDefault();
