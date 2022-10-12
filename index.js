@@ -8,7 +8,7 @@ async function getWeather(){
    const weaApi_URL = api + input.value + apiKey + units
    const response = await fetch(weaApi_URL)
    const data = await response.json()
-   document.getElementById('weather').textContent = 'The temperature in '+ input.value + ' is: '  + data.main.temp + ' degrees fahrenheit'
+   document.getElementById('weather').textContent = 'The temperature in '+ input.value + ' is: '  + data.main.temp + ' degrees fahrenheit!'
 }
 getWeather();
 
