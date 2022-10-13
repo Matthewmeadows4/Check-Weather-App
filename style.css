@@ -45,6 +45,18 @@
             margin: auto;
         }
 
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+        }
+
         h2{
             padding: 10px;
             font-size: smaller;
