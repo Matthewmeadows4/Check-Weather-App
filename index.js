@@ -25,9 +25,13 @@ inputText.addEventListener("keyup", function(event) {
 function validate(){
    let weaInput = document.getElementById('city').value
    const regex = /^[a-zA-z ]+$/g;
-   if(!regex.test(weaInput)){
+   if (weaInput == ''){
+      alert('Please enter something')
+   }
+   else if(!regex.test(weaInput)){
       alert('Hey! No special characters or numbers!')
    }
+ 
 }
 
 
