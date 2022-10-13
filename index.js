@@ -10,7 +10,7 @@ async function getWeather(){
    const data = await response.json()
    document.getElementById('weather').textContent = 'The temperature in '+ input.value + ' is: '  + data.main.temp + ' degrees fahrenheit!'
 }
-getWeather();
+//getWeather();
 
 
 let inputText = document.getElementById("city");
@@ -20,3 +20,15 @@ inputText.addEventListener("keyup", function(event) {
       document.getElementById("submit").click();
    }
 });
+
+
+function validate(){
+   let weaInput = document.getElementById('city').value
+   const regex = /^[a-zA-z]+$/g;
+   if(!regex.test(weaInput)){
+      alert('Hey! No special characters or numbers!')
+   }
+}
+
+
+getWeather();
