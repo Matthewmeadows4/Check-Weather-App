@@ -40,6 +40,11 @@
         flex-direction: column;
       }
 
+      footer{
+        font-family: 'Silkscreen', cursive;
+        text-align: center;
+      }
+
       @media  only screen and (max-width: 600px) {
         #weatherInfo{
             margin: auto;
